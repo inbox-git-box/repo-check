@@ -1,0 +1,16 @@
+{
+  "name": "scrumora",
+  "version": "1.0.0",
+  "description": "Scrumora - Project Management Tool (Monorepo)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/start.js",
+    "start": "node scripts/start.js",
+    "install:all": "npm install && npm --prefix scrumora-api install && npm --prefix scrumora-fe install",
+    "seed": "npm --prefix scrumora-api run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
